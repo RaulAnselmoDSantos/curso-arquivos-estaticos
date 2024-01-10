@@ -7,7 +7,10 @@ interface Props{
     setBusca: React.Dispatch<SetStateAction<string>>;
 }
 
+
 export default function Buscador({busca, setBusca }: Props) {
+    const situacao = setBusca;
+    console.log(busca);
     return (
         <div className={style.buscador}>
             <input 

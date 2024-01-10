@@ -5,7 +5,9 @@ type IOpcao = typeof filtros[0];
 
 
 export default function Filtros() {
-    function selectionarFiltro(opcao: IOpcao){}
+    function selectionarFiltro(opcao: IOpcao){
+        console.log(opcao.label)
+    }
     return(
         <div className={styles.filtros}>
             {filtros.map((opcao) => (
