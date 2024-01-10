@@ -25,7 +25,7 @@ export default function Cardapio() {
                 busca={busca} 
                 setBusca={setBusca} />
                 <div className={styles.cardapio__filtros}>
-                    <Filtros/>
+                    <Filtros />
                 </div>
            </section>
         </main>
