@@ -6,7 +6,7 @@ import style from './Itens.module.scss';
 export default function Itens(){
     return(
         <div className={classNames({
-            [style.itens] : true
+                [style.itens] : true
         })}>
             { cardapio.map((item) => 
             (

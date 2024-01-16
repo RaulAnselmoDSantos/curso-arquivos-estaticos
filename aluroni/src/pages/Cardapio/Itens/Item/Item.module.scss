@@ -7,7 +7,7 @@ $combos: #e6c864;
 $veganos: #80aa40;
 
 .item {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   width: 90%;
   &__imagem {
@@ -26,9 +26,9 @@ $veganos: #80aa40;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 20px;
+    padding: 0 2px;
     @media (max-width: $desktop_xsm) {
-      flex-direction: row;
+      flex-direction: column;
       margin-top: 20px;
       padding: 0;
     }
@@ -37,7 +37,7 @@ $veganos: #80aa40;
     h2 {
       font-size: 2rem;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 2px;
     }
     p {
       color: $dark-grey;
