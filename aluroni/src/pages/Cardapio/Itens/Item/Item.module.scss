@@ -7,7 +7,7 @@ $combos: #e6c864;
 $veganos: #80aa40;
 
 .item {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   width: 90%;
   &__imagem {
@@ -50,7 +50,8 @@ $veganos: #80aa40;
   &__tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
     margin-bottom: 20px;
     max-width: 700px;
     @media (max-width: $desktop_xsm) {
@@ -69,7 +70,7 @@ $veganos: #80aa40;
     display: flex;
     font-weight: bold;
     height: 40px;
-    justify-content: center;
+    justify-content: start;
     padding: 10px 30px;
     &__massas {
       background-color: $massas;
@@ -89,8 +90,9 @@ $veganos: #80aa40;
   &__porcao,
   &__qtdpessoas,
   &__valor {
+    size: bold;
     align-items: center;
-    display: flex;
+    display: block;
     font-size: 1.25rem;
     font-weight: bold;
     justify-content: center;

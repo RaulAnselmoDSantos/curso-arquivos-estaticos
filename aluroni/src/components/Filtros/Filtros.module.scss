@@ -3,7 +3,7 @@
 .filtros {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   margin: 20px 0;
   &__filtro {
     align-items: center;

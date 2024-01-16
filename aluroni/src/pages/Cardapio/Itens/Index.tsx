@@ -5,12 +5,10 @@ import style from './Itens.module.scss';
 
 export default function Itens(){
     return(
-        <div className={classNames({
-                [style.itens] : true
-        })}>
+        <div className={style.itens}>
             { cardapio.map((item) => 
             (
-                <Item key={item.id} cardapio={item}/>
+                <Item key={item.id} {...item}/>
             ))} 
                 
         </div>
