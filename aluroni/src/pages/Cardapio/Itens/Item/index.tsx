@@ -47,6 +47,7 @@ export default function Item(Props: Props) {
           {Props.category.label}
         </div>
       </div>
+          feito por Raul - Curso Alura
       </div>
       
     </section>
