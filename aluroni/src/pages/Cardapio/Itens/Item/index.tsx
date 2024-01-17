@@ -23,33 +23,30 @@ export default function Item(Props: Props) {
           sizes={`${Props.size}`}
         />
       </div>
-      
+
       <div className={style.item__descricao}>
-        
         <h2 className={style.item__titulo}>{`${Props.title}`}</h2>
         <div className={style.item__descricao}>{`${Props.description}`}</div>
-
         <div className={style.item__qtdpessoas}>
           Serve até {`${Props.serving}`} pessoa{Props.serving === 1 ? "" : "s"}.
         </div>
         <div className={style.item__porcao}> {`${Props.size}`} g </div>
-
         <div className={style.item__valor}>
           R$ {`${Props.price.toFixed(2)}`}
         </div>
         <div className={style.item__tags}>
-        <div
-          className={classNames({
-            [style.item__tipo]: true,
-            [style[`item__tipo__${Props.category.label.toLowerCase()}`]]: true,
-          })}
-        >
-          {Props.category.label}
+          <div
+            className={classNames({
+              [style.item__tipo]: true,
+              [style[`item__tipo__${Props.category.label.toLowerCase()}`]]:
+                true,
+            })}
+          >
+            {Props.category.label}
+          </div>
         </div>
+        feito por Raul - Curso Alura
       </div>
-          feito por Raul - Curso Alura
-      </div>
-      
     </section>
   );
 }
