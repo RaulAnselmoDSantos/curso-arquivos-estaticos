@@ -10,6 +10,8 @@ interface Props {
   ordenador: string;
 }
 
+let ordem = true;
+
 export default function Itens(props: Props) {
   const [lista, setLista] = useState(cardapio);
   const { busca, filtros, ordenador } = props;
@@ -25,9 +27,10 @@ export default function Itens(props: Props) {
   }
 
   function ordenar(novaLista: typeof cardapio) {
+    
     switch (ordenador) {
       case "porcao":
-        return novaLista.sort((a, b) => (a.size > b.size ? 1 : -1));
+        return novaLista.sort((a, b) => (a.size < b.size ? 1 : -1));
       case "qtd_pessoas":
         return novaLista.sort((a, b) => (a.serving > b.serving ? 1 : -1));
       case "preco":
