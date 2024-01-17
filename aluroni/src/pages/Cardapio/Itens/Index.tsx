@@ -32,9 +32,9 @@ export default function Itens(props: Props) {
       case "porcao":
         return novaLista.sort((a, b) => (a.size < b.size ? 1 : -1));
       case "qtd_pessoas":
-        return novaLista.sort((a, b) => (a.serving > b.serving ? 1 : -1));
+        return novaLista.sort((a, b) => (a.serving < b.serving ? 1 : -1));
       case "preco":
-        return novaLista.sort((a, b) => (a.price > b.price ? 1 : -1));
+        return novaLista.sort((a, b) => (a.price < b.price ? 1 : -1));
       default:
         return novaLista;
     }
