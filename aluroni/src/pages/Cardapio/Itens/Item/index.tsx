@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import cardapio from '../itens.json';
+import cardapio from 'data/cardapio.json';
 import style from './Item.module.scss';
 import logo from '../../../../assets/logo.svg';
 import Cardapio from 'pages/Cardapio';

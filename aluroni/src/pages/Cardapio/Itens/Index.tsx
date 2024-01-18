@@ -1,4 +1,4 @@
-import cardapio from './itens.json';
+import cardapio from 'data/cardapio.json';
 import Item from './Item';
 import classNames from 'classnames';
 import style from './Itens.module.scss';
@@ -25,7 +25,6 @@ export default function Itens(props: Props) {
 	}
 
 	function ordenar(novaLista: typeof cardapio) {
-    
 		switch (ordenador) {
 		case 'porcao':
 			return novaLista.sort((a, b) => (a.size < b.size ? 1 : -1));
