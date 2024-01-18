@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["@types/istanbul-reports"],
     "target": "es5",
     "lib": [
       "dom",

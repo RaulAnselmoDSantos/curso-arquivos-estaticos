@@ -17,9 +17,7 @@ export default function Inicio(){
                         <div key={item.id} className={style.recomendado}>
                             <div className={style.recomendado__imagem}>
                                 <img src={item.photo} alt={item.title} />
-                                    <button
-                                
-                                className={classNames({
+                                    <button className={classNames({
                                     [style.recomendado__botao]: true   
                                 })}>Ver mais</button>
                             </div>

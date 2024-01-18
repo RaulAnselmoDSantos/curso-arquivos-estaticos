@@ -5,6 +5,8 @@ import Cardapio from './pages/Cardapio';
 import Botao from './components/Botao';
 import 'normalize.css'; 
 import Inicio from 'pages/Inicio/Index';
+import { Router } from 'react-router-dom';
+import { AppRouter } from 'routes';
 
 
 const root = ReactDOM.createRoot(
@@ -15,7 +17,7 @@ const componenteAtual = window.location.pathname === '/' ?  <Inicio/> : <Cardapi
 
 root.render(
 	<React.StrictMode>
-		{componenteAtual}
+		<AppRouter/>
 	</React.StrictMode>,
 	
 );
