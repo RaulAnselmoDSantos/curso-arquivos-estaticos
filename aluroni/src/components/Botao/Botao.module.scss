@@ -1,6 +1,18 @@
+@import "styles/breakpoint";
+@import "styles/variaveis";
+
 .botao {
-    border-radius: 4px;
-    background: #2B7DE9;
-    color: white;
-    padding: 12px;
+  background-color: $red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: .2s ease;
+  width: 100%;
+  &:hover {
+    background-color: $red-dark;
   }
+}

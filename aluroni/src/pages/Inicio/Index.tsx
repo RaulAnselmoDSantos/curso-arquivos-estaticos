@@ -2,6 +2,9 @@ import cardapio from "data/cardapio.json";
 import style from './Inicio.module.scss';
 import classNames from "classnames";
 import { useState } from "react";
+import BarraInicial from "components/BarraInicial";
+import Botao from "components/Botao";
+import { text } from "stream/consumers";
 
 export default function Inicio(){
     let pratosRecomendados = [...cardapio]
@@ -10,6 +13,7 @@ export default function Inicio(){
 
     return (
         <section>
+            <BarraInicial/>
             <h3 className={style.titulo}>Recomendações da cozinha</h3> 
             <div className={style.recomendados}>
                 {pratosRecomendados.map(item  => {  
@@ -17,9 +21,9 @@ export default function Inicio(){
                         <div key={item.id} className={style.recomendado}>
                             <div className={style.recomendado__imagem}>
                                 <img src={item.photo} alt={item.title} />
-                                    <button className={classNames({
-                                    [style.recomendado__botao]: true   
-                                })}>Ver mais</button>
+                                    <Botao 
+                                        texto={"Ver mais"}
+                                    ></Botao>
                             </div>
                         </div>
                     );
