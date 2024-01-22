@@ -5,9 +5,9 @@
 .barra {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 0 10px 0 10px;
-    padding: 10px 2em;
+    padding: 10px;
+    text-align: center;
+    
   
   
     @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
@@ -21,26 +21,23 @@
       padding: 2em $padding-horizontal-md;           
       
     }  
-  
-
     &__logo{
         align-items: center;
         width: auto;
         height: auto;
-        padding: 0 20% 0 0%;
+        padding: 0 10% 0 0%;
     }
-
     &__opcoes {
       display: flex;
-      align-items: center;
-      margin: 0  100% 0 20%;
+      flex-direction: row;
+      margin: 0  30% 0 0;
       color: $dark;
       font-size: 3rem;
+      text-align: start;
       &__pagina{
         display: none; 
       }
     }
-  
     :link {
         
         text-decoration:none;
@@ -51,9 +48,6 @@
     }:hover{
         color: red;
     }
-    
-   
-    
   }
 
   @media (max-width: $desktop_xsm) {

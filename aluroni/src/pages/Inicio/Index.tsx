@@ -15,12 +15,11 @@ export default function Inicio(){
         <section>
             <BarraInicial/>
             <h3 className={style.titulo}>Recomendações da cozinha</h3> 
-            <div className={style.recomendados}>
+            <div className={style.recomendado}>
                 {pratosRecomendados.map(item  => {  
                     return (
-                        
                         <div key={item.id} className={style.recomendados}>
-                            <div className={style.titulo}>{item.title} </div>
+                            <div className={style.recomendado__titulorecomendado}> {item.title} </div>
 
                             <div className={style['recomendado__imagem']}>
                                 <img src={item.photo} alt={item.title} />

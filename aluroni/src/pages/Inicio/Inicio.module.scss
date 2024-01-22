@@ -1,5 +1,5 @@
-@import "src/styles/variaveis";
-@import "src/styles/breakpoint";
+@import "./../../styles/breakpoint";
+@import "./../../styles/variaveis";
 
 .titulo {
   display: flex;
@@ -10,13 +10,16 @@
   justify-content: center;
 }
 .recomendados {
-  border-radius: 2px;
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 10px 0 10px;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px;
 }
 .recomendado {
+  &__titulorecomendado{
+    display: flex;
+    font-size: 3rem;
+  }
+
   &__imagem {
     width: 300px;
     margin-bottom: 10px;
@@ -71,16 +74,10 @@
 @media (max-width: $desktop_xsm) {
   .titulo {
     display: flex;
-    flex-direction: column;
     color: $dark;
-    font-size: 2rem;
-    margin:  10px 20px 10px;
-    word-break: break-word;
-    max-width: 100%;
-    overflow-wrap: break-word; 
-    word-break: break-word;
-    align-items: center;
-  
+    font-size: 3rem;
+    margin:  10px 10px;
+    text-align: center;
   }
   .recomendados {
     align-items: center;
@@ -88,20 +85,29 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 30px 10px 30px 10px;
     justify-content: center;
-  
-    &__recomendado{
+    padding: 10px 10px;
+  } 
+  .recomendado{
       flex-wrap: wrap;
-      
+      flex-direction: column;
+    
+      &__titulorecomendado{
+        display: flex;
+        font-size: 3rem;
+        text-align: center;
+        max-width: 350px; 
+
+      }
       &__imagem {
         flex-wrap: wrap;
         padding: auto;
-        width: 300px;
+        min-width: 300px;
         margin-bottom: 10px;
+        margin: 20px 10px ;
+        justify-content: center;
         img {
-          border-radius: 8px;
-          width: 100%;
+          border-radius: 8px; 
         }
       }
       &__botao {
@@ -118,9 +124,9 @@
         &:hover {
           background-color: $red-dark;
         }
-    }
+      }
     }  
-  }
+  
   .nossaCasa {
     margin-bottom: 90px;
     position: relative;
@@ -146,5 +152,5 @@
       right: 0;
       width: 200px;
     }
-  }  
+  } 
 }
