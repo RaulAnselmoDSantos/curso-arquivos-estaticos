@@ -10,7 +10,7 @@ export function AppRouter() {
         <Router>
             <MenuInicial/>
             <Routes>
-                <Route path='/' element={<Cardapio/>} />
+                <Route path='/cardapio' element={<Cardapio/>}/>
                 <Route path='/recomandacao' element={<Inicio/>} />
                 <Route path='/descricao' element={<Descricao/>} />
             </Routes>
