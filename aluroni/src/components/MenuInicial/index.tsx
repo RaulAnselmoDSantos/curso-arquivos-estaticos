@@ -2,6 +2,8 @@ import React from "react";
 import {ReactComponent as Logo} from 'assets/logo.svg';
 import style from './BarraInicial.module.scss';
 import classNames from "classnames";
+import {Link} from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
 
 export function MenuInicial(){
@@ -16,19 +18,22 @@ export function MenuInicial(){
         to : '/descricao'
     }];
     return(
-        
+        <main>
         <nav className={style.barra}>
         <Logo/>
             <ul className={style.barra__list}>
                 {rotas.map((rota, index) => (
                     <li className={style.barra__list} key={index}>
-                        <a href={rota.to}>
+                        <Link to={rota.to}>
                             <h4> {rota.label} </h4>
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
         </nav>
-
+       
+            
+        </main>
+        
     );
 }

@@ -3,8 +3,9 @@ import style from './Inicio.module.scss';
 import classNames from "classnames";
 import { useState } from "react";
 import Botao from "components/Botao";
+import { Outlet } from "react-router-dom";
 
-export default function Inicio(){
+export default function Recomendacao(){
     let pratosRecomendados = [...cardapio]
     pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).slice(0, 3); 
 
@@ -27,6 +28,7 @@ export default function Inicio(){
                     );
                 })}
             </div>
+            
         </section>
     )
 }

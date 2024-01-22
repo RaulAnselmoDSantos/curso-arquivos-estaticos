@@ -1,5 +1,10 @@
+import { Outlet } from "react-router-dom";
+
 export default function Descricao(){
     return (
-        <p>aaaaaaaaaaaaaaa</p>
+        <div>
+            <h1>aaaaaaaaaaaaaaa</h1>
+       
+        </div>
     )
 }

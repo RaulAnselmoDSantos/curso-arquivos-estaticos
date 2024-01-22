@@ -5,20 +5,7 @@
   padding: 20px $padding-horizontal;
 }
 
-.header {
-  align-items: center;
-  background-image: url("/assets/cardapio/header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 300px;
-  &__text {
-    color: white;
-    font-size: 5rem;
-    min-width: 400px;
-    width: 40%;
-  }
-}
+
 
 .cardapio {
   padding: 50px $padding-horizontal;
@@ -42,16 +29,6 @@
   .menu {
     padding: 20px $padding-horizontal;
   }
-  .header {
-      padding: 0px $padding-horizontal-mobile;
-      align-items: center;
-      background-image: url("/assets/cardapio/header.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      height: 300px;
-      padding: 0px $padding-horizontal;
-    }
     .cardapio {
       padding: 50px $padding-horizontal;
       
