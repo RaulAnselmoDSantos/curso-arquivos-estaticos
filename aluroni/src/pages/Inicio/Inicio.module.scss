@@ -1,15 +1,18 @@
 @import '../../styles/variaveis';
 .titulo {
+  display: flex;
   color: $dark;
   font-size: 3rem;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .recomendados {
   border-radius: 2px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  justify-content: space-around;
 }
 .recomendado {
   &__imagem {

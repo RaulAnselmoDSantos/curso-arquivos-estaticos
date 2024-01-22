@@ -16,7 +16,7 @@ export default function BarraInicial(){
                 [style.barra__opcoes]: true
             })} >
                 
-                <h3 className={""}>
+                <h3 className={style.barra__opcoes}>
                     <NavLink to="/">Cardapio </NavLink>
                 </h3>
                 <h3 className={style.barra__opcoes} >

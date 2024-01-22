@@ -6,16 +6,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 50px $padding-horizontal;
-  @media (max-width: $desktop_xsm) {
-    padding: 50px $padding-horizontal-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 50px $padding-horizontal-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 50px $padding-horizontal-md;
-  }
+    margin: 0 10px 0 10px;
+    padding: 10px 2em;
+  
+  
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      padding: 50px $padding-horizontal-sm;
+      
+  
+  
+    }
+  
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+      padding: 2em $padding-horizontal-md;           
+      
+    }  
+  
 
     &__logo{
         align-items: center;
@@ -27,7 +33,7 @@
     &__opcoes {
       display: flex;
       align-items: center;
-      margin: 0  20% 0 20%;
+      margin: 0  100% 0 20%;
       color: $dark;
       font-size: 3rem;
       &__pagina{
@@ -46,7 +52,54 @@
         color: red;
     }
     
-    
+   
     
   }
+
+  @media (max-width: $desktop_xsm) {
+    
+    
+    .barra {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 10px 0 10px;
+      
+    
+    
+    
   
+      &__logo{
+          align-items: center;
+          width: auto;
+          height: auto;
+          padding: 0 20% 0 0%;
+      }
+  
+      &__opcoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0  10% 0 10%;
+        color: $dark;
+        font-size: 2rem;
+        &__pagina{
+          display: none; 
+        }
+      }
+    
+      :link {
+          
+          text-decoration:none;
+          color: black;
+      }
+      :visited{
+          color: black
+      }:hover{
+          color: red;
+      }
+      
+     
+      
+    }
+  }
