@@ -18,8 +18,11 @@ export default function Inicio(){
             <div className={style.recomendados}>
                 {pratosRecomendados.map(item  => {  
                     return (
-                        <div key={item.id} className={style.recomendado}>
-                            <div className={style.recomendado__imagem}>
+                        
+                        <div key={item.id} className={style.recomendados}>
+                            <div className={style.titulo}>{item.title} </div>
+
+                            <div className={style['recomendado__imagem']}>
                                 <img src={item.photo} alt={item.title} />
                                     <Botao 
                                         texto={"Ver mais"}
