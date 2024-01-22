@@ -4,10 +4,12 @@ import style from './BarraInicial.module.scss';
 import classNames from "classnames";
 import { NavLink, Router } from "react-router-dom";
 
-export default function BarraInicial(){
+
+export function MenuInicial(){
 
     return(
         <header className={style.barra} >
+
             <div className={style.barra__logo}>
             <Logo/>
             </div>
@@ -16,12 +18,15 @@ export default function BarraInicial(){
                 [style.barra__opcoes]: true
             })} >
                 
-                <h3 className={style.barra__opcoes}>
+                <h4 className={style.barra__opcoes}>
                     <NavLink to="/">Cardapio </NavLink>
-                </h3>
-                <h3 className={style.barra__opcoes} >
-                    <NavLink to="/recomandacao">Recomandação</NavLink>
-                </h3>
+                </h4>
+                <h4 className={style.barra__opcoes} >
+                    <NavLink to="/recomandacao">Recomendação</NavLink>
+                </h4>
+                <h4 className={style.barra__opcoes} >
+                    <NavLink to="/descricao">Sobre</NavLink>
+                </h4>
             </div>
         </header>
     );

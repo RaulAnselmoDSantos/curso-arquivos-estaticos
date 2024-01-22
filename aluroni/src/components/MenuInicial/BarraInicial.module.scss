@@ -7,41 +7,28 @@
     flex-direction: row;
     padding: 10px;
     text-align: center;
-    
-  
-  
-    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-      padding: 50px $padding-horizontal-sm;
-      
-  
-  
-    }
-  
-    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-      padding: 2em $padding-horizontal-md;           
-      
-    }  
+    align-items: center;
+     
     &__logo{
         align-items: center;
         width: auto;
         height: auto;
-        padding: 0 10% 0 0%;
+        padding: 0 5% 0 0%;
     }
     &__opcoes {
       display: flex;
       flex-direction: row;
-      margin: 0  30% 0 0;
+      margin: 0  20% 0 0;
       color: $dark;
-      font-size: 3rem;
+      font-size: 1rem;
       text-align: start;
       &__pagina{
         display: none; 
       }
     }
     :link {
-        
-        text-decoration:none;
-        color: black;
+        text-decoration: none;
+        color: #000000;
     }
     :visited{
         color: black
@@ -51,14 +38,14 @@
   }
 
   @media (max-width: $desktop_xsm) {
-
+    
     
     .barra {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0 10px 0 10px;
-    
+      display: flex;
       &__logo{
 
           align-items: center;
@@ -73,7 +60,7 @@
         flex-direction: column;
         margin: 0  10% 0 10%;
         color: $dark;
-        font-size: 2rem;
+        font-size: 1rem;
         &__pagina{
           display: none; 
         }
