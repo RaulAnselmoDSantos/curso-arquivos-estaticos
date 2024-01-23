@@ -5,115 +5,63 @@
   padding: 20px $padding-horizontal;
 }
 
-
-
 .cardapio {
-  padding: 50px $padding-horizontal;
-
-  &__titulo {
-    color: $dark;
-    font-size: 3rem;
-    margin-bottom: 30px;
-  }
-  &__filtros {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    width: 100%;
-  }
-}
-  
-@media (max-width: $desktop_xsm) {
-  .menu {
-    padding: 20px $padding-horizontal;
-  }
-    .cardapio {
-      padding: 50px $padding-horizontal;
-      
-      &__titulo {
-        color: $dark;
-        font-size: 3rem;
-        margin-bottom: 30px;
-      }
-      &__filtros {
+    &__filtros {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 30px;
         width: 100%;
+    }
+}
+
+  
+@media (max-width: $desktop_xsm) {
+  .menu {
+    padding: 20px $padding-horizontal;
+  }
+  
+  .cardapio {
+      &__filtros {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          width: 100%;
       }
-    }  
+  }
 }
 @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
   .menu {
     padding: 20px $padding-horizontal;
   }
-  .header {
-    padding: 0px $padding-horizontal-mobile;
-    align-items: center;
-    background-image: url("/assets/cardapio/header.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 300px;
-    padding: 0px $padding-horizontal;
-  }
+  
   .cardapio {
-    padding: 50px $padding-horizontal;
-    
-    &__titulo {
-      color: $dark;
-      font-size: 3rem;
-      margin-bottom: 30px;
-    }
-    &__filtros {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      width: 100%;
-    }
+      &__filtros {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          width: 100%;
+      }
   }
 }
 @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
   .menu {
     padding: 20px $padding-horizontal;
   }
-  .header {
-    padding: 0px $padding-horizontal-mobile;
-    align-items: center;
-    background-image: url("/assets/cardapio/header.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 300px;
-    padding: 0px $padding-horizontal;
-    &__text {
-      color: white;
-      font-size: 5rem;
-      min-width: 400px;
-      width: 40%;
-    }
-  }
+  
   .cardapio {
-    padding: 50px $padding-horizontal;
-    
-    &__titulo {
-      color: $dark;
-      font-size: 3rem;
-      margin-bottom: 30px;
-    }
-    &__filtros {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      width: 100%;
-    }
+      &__filtros {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          width: 100%;
+      }
   }
 }

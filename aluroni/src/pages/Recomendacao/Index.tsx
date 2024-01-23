@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useState } from "react";
 import Botao from "components/Botao";
 import { Outlet } from "react-router-dom";
+import stylesTema from 'styles/Tema.module.scss'
 
 export default function Recomendacao(){
     let pratosRecomendados = [...cardapio]
@@ -11,7 +12,7 @@ export default function Recomendacao(){
 
     return (
         <section>
-            <h5 className={style.titulo}>Recomendações da cozinha</h5> 
+            <h5 className={stylesTema.titulo}>Recomendações da cozinha</h5> 
             <div className={style.recomendado}>
                 {pratosRecomendados.map(item  => {  
                     return (

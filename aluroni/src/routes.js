@@ -14,7 +14,7 @@ export function AppRouter() {
                     <Route path='/' element={<PaginaPadrao/>}>
                         <Route path='cardapio' element={<Cardapio/>}/>
                         <Route index path='recomandacao' element={<Recomendacao/>} />
-                        <Route  path='descricaoa' element={<Descricao/>} />
+                        <Route  path='descricao' element={<Descricao/>} />
                     </Route>
                 </Routes>
             </Router>
