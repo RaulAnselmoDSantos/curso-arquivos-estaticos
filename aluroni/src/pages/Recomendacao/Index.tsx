@@ -28,8 +28,8 @@ export default function Recomendacao(){
                         </div>
                     );
                 })}
-            </div>
-            
+            </div> 
         </section>
+        
     )
 }
