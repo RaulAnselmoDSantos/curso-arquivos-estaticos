@@ -1,7 +1,9 @@
 import { Outlet } from "react-router-dom";
-import style from '../../components/MenuInicial/BarraInicial.module.scss';
+import style from '../../pages/PaginaPadrao/PaginaPadrao.module.scss';
 import classNames from "classnames";
 import stylesTema from 'styles/Tema.module.scss';
+
+
 
 export default function PaginaPadrao(){
     return(
@@ -11,6 +13,14 @@ export default function PaginaPadrao(){
         </header>
         <div className={stylesTema.container} >
             <Outlet/>
+        
+            <h3 className={stylesTema.titulo}>Nossa Casa</h3>
+            <div className={style.footer} >
+            
+                <div className={style.footer__endereco}> 
+                    Rua Vergueiro, 3185 <br/> <br/> Vila Mariana - SP
+                </div>
+            </div>
         </div>
         </main>
         
