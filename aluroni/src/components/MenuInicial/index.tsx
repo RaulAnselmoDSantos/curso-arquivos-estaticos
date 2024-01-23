@@ -15,6 +15,9 @@ export function MenuInicial(){
     },{
         label : 'Descricao',
         to : '/descricao'
+    }, {
+        label : 'Sobre',
+        to : '/sobre'
     }];
     return(
         <main>
