@@ -5,6 +5,8 @@ import Descricao from 'pages/Descricao/Index';
 import Recomendacao from 'pages/Recomendacao/Index';
 import PaginaPadrao from 'pages/PaginaPadrao/index';
 import Sobre from 'pages/Sobre';
+import NotFound from 'pages/NotFound';
+import Footer from 'pages/Footer';
 
 export function AppRouter() {
     return (
@@ -17,8 +19,10 @@ export function AppRouter() {
                         <Route index path='recomandacao' element={<Recomendacao/>} />
                         <Route  path='descricao' element={<Descricao/>} />
                         <Route  path='sobre' element={<Sobre/>} />
+                        <Route  path='*' element={<NotFound/>} />
                     </Route>
                 </Routes>
+                <Footer/>
             </Router>
         </main>
     );
