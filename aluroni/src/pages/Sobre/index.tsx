@@ -41,6 +41,13 @@ export default function Sobre() {
             </div>
         ))}
       </div>
+      <h3 className={stylesTema.titulo}>Nossa Casa</h3>
+            <div className={style.footer} >
+            
+                <div className={style.footer__endereco}> 
+                    Rua Vergueiro, 3185 <br/> <br/> Vila Mariana - SP
+                </div>
+            </div>
     </section>
   );
 }

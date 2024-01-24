@@ -13,14 +13,6 @@ export default function PaginaPadrao(){
         </header>
         <div className={stylesTema.container} >
             <Outlet/>
-        
-            <h3 className={stylesTema.titulo}>Nossa Casa</h3>
-            <div className={style.footer} >
-            
-                <div className={style.footer__endereco}> 
-                    Rua Vergueiro, 3185 <br/> <br/> Vila Mariana - SP
-                </div>
-            </div>
         </div>
         </main>
         
