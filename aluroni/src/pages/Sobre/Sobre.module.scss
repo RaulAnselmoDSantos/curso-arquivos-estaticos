@@ -51,19 +51,20 @@
   }
 }
 
-@media screen, (max-width: 450px){
+@media (max-width: 800px){
   .sobreNos {
     display: flex;
-    gap: 0px;
-    margin-bottom: 0px;
+    flex-direction: column;
+    margin-bottom: 10px;
     align-items: center;
     &__texto {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-size: 0.5rem;
+      font-size: 2rem;
       font-weight: bold;
       text-align: justify;
+      margin: 10px 20px;
   p {
         font-family: 'Josefin Sans', sans-serif;
       }
@@ -89,15 +90,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: 150px;
+    height: 200px;
+    width: 400px;
     border-radius: 10px;
-    
+    margin: 10px auto;
+
   &__endereco{
-    text-align: end;
+    text-align: center;
     color: white;
-    font-size: 0.5rem;
+    font-size: 1rem;
     min-width: 10%;
-    width: 40%;
+    width: 30%;
     border-color: black;
   }
 }
