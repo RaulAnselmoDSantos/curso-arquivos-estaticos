@@ -6,12 +6,12 @@
   border: none;
   border-radius: 5px;
   color: white;
-  align-content: center;
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px 0;
   transition: .2s ease;
+  width: 100%;
   &:hover {
     background-color: $red-dark;
   }
