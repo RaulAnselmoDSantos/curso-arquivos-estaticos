@@ -2,20 +2,22 @@
 @import "breakpoint";
 
 .container {
- 
- 
-  @media (max-width: 300px) {
-    .titulo { 
-      color: $dark;
-      font-size: 3.5rem;
-      margin: 5% 0;
-    }
-  }
- 
+ display: block;
+ min-width: screen;
 }
-.titulo { 
+.titulo {
+  overflow: none; 
   color: $dark;
   font-size: 3rem;
-  margin: 20px 0;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+@media (max-width: 410px) {
+  .titulo { 
+    color: $dark;
+    font-size: 2rem;
+    margin: 5% 0;
+  }
 }
 
