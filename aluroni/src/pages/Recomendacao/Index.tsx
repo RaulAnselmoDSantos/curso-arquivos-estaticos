@@ -2,13 +2,18 @@ import cardapio from "data/cardapio.json";
 import style from './Inicio.module.scss';
 import classNames from "classnames";
 import { useState } from "react";
-import Botao from "components/Botao";
 import { Outlet } from "react-router-dom";
 import stylesTema from 'styles/Tema.module.scss'
+import { useNavigate } from "react-router-dom";
 
 export default function Recomendacao(){
     let pratosRecomendados = [...cardapio]
     pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).slice(0, 3); 
+    const navegate = useNavigate();
+
+    function redirecionaParaDetalhes(prato: typeof cardapio[0]) {
+        navegate(`/prato/${prato.id}`, {state: {...prato}});
+    }
 
     return (
         <section>
@@ -22,9 +27,12 @@ export default function Recomendacao(){
 
                             <div className={style['recomendado__imagem']}>
                                 <img src={item.photo} alt={item.title} />
-                                    <Botao 
-                                        texto={"Ver mais"}
-                                    ></Botao>
+                                <button
+                                    className={style.recomendado__botao}
+                                    onClick={() => redirecionaParaDetalhes(item)}  
+                                >
+
+                                </button>
                             </div>
                         </div>
                     );
