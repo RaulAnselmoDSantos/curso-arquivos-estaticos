@@ -38,7 +38,9 @@
     height: 300px;
     border-radius: 10px;
     margin: auto;
+
   &__endereco{
+    display: flex;
     text-align: center;
     color: white;
     font-size: 1rem;
