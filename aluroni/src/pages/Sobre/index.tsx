@@ -13,7 +13,7 @@ export default function Sobre() {
         <h3 className={stylesTema.titulo}>Sobre</h3><br/>
     <div className={style.sobreNos}>
       
-        <img src={casa} alt={"Casa do Aluroni"} />
+        <img className={style.imagens__imagem} src={casa} alt={"Casa do Aluroni"} />
       
       <div className={style.sobreNos__texto}>
         <p>

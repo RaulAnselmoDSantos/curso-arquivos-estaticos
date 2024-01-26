@@ -1,33 +1,10 @@
 @import "src/styles/variaveis";
 @import "src/styles/breakpoint";
 
-.header {
-  align-items: center;
-  background-image: url('../../assets/cardapio/header.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 300px;
-  &__text {
-    color: white;
-    font-size: 5rem;
-    min-width: 400px;
-    width: 40%;
-    padding-left: 30px;
-  }
-}
-
 .barra {
-    display: flex;
-    flex-direction: row;
     padding: 10px;
-    text-align: center;
-    align-items: center;
-     
+
     &__logo{
-        align-items: center;
-        width: auto;
-        height: auto;
         padding: 0 5% 0 0%;
     }
     &__opcoes {
@@ -36,7 +13,6 @@
       margin: 0  20% 0 0;
       color: $dark;
       font-size: 1rem;
-      text-align: start;
       &__pagina{
         display: none; 
       }
@@ -51,10 +27,9 @@
         color: red;
     }
     &__list {
-      align-items: center;
-      display: flex;
-      font-size: 115%;
-      padding: 0 10px;
+      flex-direction: row;
+      font-size: 3rem;
+      padding: 10px 10px;
     }
     &__link {
       list-style-type: none;
@@ -73,21 +48,19 @@
     }
   }
 
-  @media (max-width: $desktop_xsm) {
+  @media screen, (max-width: 410px) {
     
     
     .barra {
-      display: flex;
-      flex-direction: column;
+      display:  block;
+      flex-direction: row;
       align-items: center;
-      margin: 0 10px 0 10px;
-      display: flex;
+      margin: auto;
       &__logo{
-
           align-items: center;
           width: auto;
           height: auto;
-          padding: 0 0% 0 0%;
+          padding: 10% 0% 0 10%;
       }
   
       &__opcoes {
@@ -96,9 +69,9 @@
         flex-direction: column;
         margin: 0  10% 0 10%;
         color: $dark;
-        font-size: 1rem;
+        font-size: 2rem;
         &__pagina{
-          display: none; 
+          display: flex; 
         }
       }
     
@@ -112,18 +85,16 @@
       }:hover{
           color: red;
       }
-      
-     
-      
-    
-
     &__list {
-      align-items: center;
+      text-align: center;
       display: flex;
+      
+      font-size: 2rem;
+      font-style: italic;
     }
     &__link {
       list-style-type: none;
-      padding: 0 20px;
+      
       a {
         color: $dark;
         cursor: pointer;

@@ -25,3 +25,30 @@
     }
   }
 }
+@media screen, (max-width: 410px) {
+  .filtros {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap-reverse;
+    margin: 20px 10px;
+    &__filtro {
+      align-items: center;
+      background-color: $grey;
+      border: none;
+      border-radius: 4px;
+      display: flex;
+      font-size: 1.25rem;
+      font-weight: bold;
+      height: 40px;
+      justify-content: center;
+      width: 150px;
+      &__ativo {
+        background-color: $blue;
+        color: white;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

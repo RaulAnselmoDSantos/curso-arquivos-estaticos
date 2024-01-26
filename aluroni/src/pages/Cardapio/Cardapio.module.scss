@@ -2,10 +2,11 @@
 @import "src/styles/breakpoint";
 
 .menu {
-  padding: 20px $padding-horizontal;
+ margin: 0 0 ;
 }
 
 .cardapio {
+  margin: 10px;
     &__filtros {
         align-items: center;
         display: flex;
@@ -17,7 +18,7 @@
 }
 
   
-@media (max-width: $desktop_xsm) {
+@media (max-width: 410px) {
   .menu {
     padding: 20px $padding-horizontal;
   }

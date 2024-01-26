@@ -18,3 +18,19 @@
   }
 }
 
+
+@media screen, (max-width: 410px) {
+  .header {
+    margin: 0 0;
+    background-image: url('../../assets/cardapio/header.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    &__text {
+      max-width: fit-content;
+      color: white;
+      font-size: 2rem;
+      width: 100%;
+    }
+  }
+}
