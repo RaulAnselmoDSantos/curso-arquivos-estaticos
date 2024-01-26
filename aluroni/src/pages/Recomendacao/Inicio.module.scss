@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: $desktop_xsm) {
+@media (max-width: 900px) {
   .titulo {
     display: flex;
     color: $dark;
@@ -81,6 +81,8 @@
     flex-direction: column;
   }
   .recomendados {
+    overflow: visible;
+    margin: 30px;
     align-items: center;
     border-radius: 2rem;
     display: flex;
@@ -91,11 +93,8 @@
   .recomendado{
       flex-wrap: wrap;
       flex-direction: column;
-      max-width: 300px;
-      min-width: 150px;
       height: auto;
       align-items: center;
-      
       &__titulorecomendado{
         display: flex;
         font-size: 2rem;

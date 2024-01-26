@@ -12,6 +12,7 @@ export default function Recomendacao(){
 
     return (
         <section>
+        <div className={stylesTema.container}>
             <h5 className={stylesTema.titulo}>Recomendações da cozinha</h5> 
             <div className={style.recomendado}>
                 {pratosRecomendados.map(item  => {  
@@ -29,6 +30,7 @@ export default function Recomendacao(){
                     );
                 })}
             </div> 
+        </div>
         </section>
         
     )
