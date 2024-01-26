@@ -22,7 +22,9 @@ export function MenuInicial(){
     return(
         <main>
             <nav className={style.barra}>
-            <Logo/>
+                
+                    <Logo/>
+                
                 <ul className={style.barra__list}>
                     {rotas.map((rota, index) => (
                         <li className={style.barra__list} key={index}>
