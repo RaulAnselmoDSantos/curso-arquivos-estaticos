@@ -10,7 +10,7 @@ import Footer from 'pages/Footer';
 
 export function AppRouter() {
     return (
-        <main>
+        <main className='container'>
             <Router>
                 <MenuInicial/>
                 <Routes>
@@ -19,8 +19,9 @@ export function AppRouter() {
                         <Route index path='recomandacao' element={<Recomendacao/>} />
                         <Route  path='descricao' element={<Descricao/>} />
                         <Route  path='sobre' element={<Sobre/>} />
-                        <Route  path='*' element={<NotFound/>} />
+                        
                     </Route>
+                    <Route  path='*' element={<NotFound/>} />
                 </Routes>
                 <Footer/>
             </Router>
