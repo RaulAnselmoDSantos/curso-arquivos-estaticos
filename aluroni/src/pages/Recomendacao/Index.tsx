@@ -31,7 +31,7 @@ export default function Recomendacao(){
                                     className={style.recomendado__botao}
                                     onClick={() => redirecionaParaDetalhes(item)}  
                                 >
-
+                                    Ver mais
                                 </button>
                             </div>
                         </div>
