@@ -6,7 +6,7 @@
 
 
 #root > main.container {
-  overflow: auto;
+  overflow: visible;
   width: auto;
   display: flex;
   flex-direction: column;
