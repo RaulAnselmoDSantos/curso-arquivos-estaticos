@@ -12,7 +12,7 @@ export default function Recomendacao(){
     const navegate = useNavigate();
 
     function redirecionaParaDetalhes(prato: typeof cardapio[0]) {
-        navegate(`/prato/${prato.id}`, {state: {...prato}});
+        navegate(`/prato/${prato.id}`, {state: {prato}});
     }
 
     return (
