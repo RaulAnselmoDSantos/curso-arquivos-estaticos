@@ -1,12 +1,10 @@
 import classNames from 'classnames';
-import cardapio from 'data/cardapio.json';
 import style from './Item.module.scss';
-import logo from '../../../../assets/logo.svg';
-import Cardapio from 'pages/Cardapio';
+import { Prato } from 'types/Prato';
 
-type Props = (typeof cardapio)[0];
 
-export default function Item(Props: Props) {
+
+export default function Item(Props: Prato) {
 	function idCategoria(categoria: number) {
 		if (categoria === 1) {
 			return style.tags__massas;
@@ -45,7 +43,7 @@ export default function Item(Props: Props) {
 						{Props.category.label}
 					</div>
 				</div>
-        feito por Raul - Curso Alura
+        
 			</div>
 		</section>
 	);
