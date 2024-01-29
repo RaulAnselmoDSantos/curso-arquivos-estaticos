@@ -3,12 +3,12 @@ import Item from './Item';
 import classNames from 'classnames';
 import style from './Itens.module.scss';
 import { useEffect, useState } from 'react';
-import { Cardapio } from 'types/Prato';
+import { Cardapio } from 'types/Pratos';
 
 interface Props {
-  busca: string;
+  busca: string ;
   filtros: number | null;
-  ordenador: string;
+  ordenador: string | null;
 }
 
 export default function Itens(props: Props) {
