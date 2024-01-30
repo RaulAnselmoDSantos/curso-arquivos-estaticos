@@ -1,19 +1,19 @@
 import style from "./Prato.module.scss";
-import { useParams, useNavigate} from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import cardapio from "data/cardapio.json";
 import TagsPrato from "components/TagsPrato/TagsPrato";
 import NotFound from "pages/NotFound";
-
+import PaginaPadrao from "pages/PaginaPadrao";
 
 export default function Prato() {
   const { id } = useParams();
   const navigate = useNavigate();
   const prato = cardapio.find((item) => item.id === Number(id));
   if (!prato) {
-    return < NotFound/>;
+    return <NotFound />;
   }
   return (
-    <>
+    <PaginaPadrao>
       <button className={style.voltar} onClick={() => navigate(-1)}>
         {`< voltar`}
       </button>
@@ -22,9 +22,11 @@ export default function Prato() {
         <div className={style.imagem}>
           <img src={prato.photo} alt={prato.title} />
         </div>
-        <div className={style.conteudo__descricao}>{`${prato.description}`}</div>
-        <TagsPrato {...prato}/>
+        <div
+          className={style.conteudo__descricao}
+        >{`${prato.description}`}</div>
+        <TagsPrato {...prato} />
       </section>
-    </>
+    </PaginaPadrao>
   );
 }

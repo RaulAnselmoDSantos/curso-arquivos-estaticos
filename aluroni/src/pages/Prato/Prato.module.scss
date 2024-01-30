@@ -1,5 +1,5 @@
-@import '../../styles/variaveis';
-@import '../../styles/breakpoint';
+@import "../../styles/variaveis";
+@import "../../styles/breakpoint";
 .voltar {
   background-color: transparent;
   border: none;
@@ -55,7 +55,7 @@ $veganos: #80aa40;
   @media (max-width: $mobile) {
     justify-content: flex-start;
   }
-div {
+  div {
     margin: 10px;
   }
   &__tipo {

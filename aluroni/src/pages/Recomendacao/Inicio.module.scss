@@ -15,7 +15,7 @@
   padding: 10px;
 }
 .recomendado {
-  &__titulorecomendado{
+  &__titulorecomendado {
     display: flex;
     font-size: 3rem;
   }
@@ -37,7 +37,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 0;
-    transition: .2s ease;
+    transition: 0.2s ease;
     width: 100%;
     &:hover {
       background-color: $red-dark;
@@ -76,7 +76,7 @@
     display: flex;
     color: $dark;
     font-size: 2rem;
-    margin:  10px 10px;
+    margin: 10px 10px;
     text-align: center;
     flex-direction: column;
   }
@@ -89,47 +89,46 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-  } 
-  .recomendado{
+  }
+  .recomendado {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    &__titulorecomendado {
+      display: flex;
+      font-size: 2rem;
+      text-align: center;
+      max-width: 350px;
+    }
+    &__imagem {
       flex-wrap: wrap;
-      flex-direction: column;
-      height: auto;
+      min-width: 100%;
+      margin: 10% 10px;
+      justify-content: center;
+      max-width: 300px;
       align-items: center;
-      &__titulorecomendado{
-        display: flex;
-        font-size: 2rem;
-        text-align: center;
-        max-width: 350px; 
+      img {
+        border-radius: 8px;
+      }
+    }
+    &__botao {
+      background-color: $red;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 10px 0;
+      transition: 0.2s ease;
+      width: 100%;
+      &:hover {
+        background-color: $red-dark;
+      }
+    }
+  }
 
-      }
-      &__imagem {
-        flex-wrap: wrap;
-        min-width: 100%;
-        margin: 10% 10px;
-        justify-content: center;
-        max-width: 300px;
-        align-items: center;
-        img {
-          border-radius: 8px; 
-        }
-      }
-      &__botao {
-        background-color: $red;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding: 10px 0;
-        transition: .2s ease;
-        width: 100%;
-        &:hover {
-          background-color: $red-dark;
-        }
-      }
-    }  
-  
   .nossaCasa {
     margin-bottom: 90px;
     position: relative;
@@ -155,5 +154,5 @@
       right: 0;
       width: 200px;
     }
-  } 
+  }
 }

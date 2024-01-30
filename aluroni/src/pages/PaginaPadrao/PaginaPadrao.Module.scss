@@ -1,11 +1,10 @@
 @import "src/styles/variaveis";
 @import "src/styles/breakpoint";
 
-
 .header {
-  padding-left: 18%  ;
+  padding-left: 18%;
   align-items: center;
-  background-image: url('../../assets/cardapio/header.png');
+  background-image: url("../../assets/cardapio/header.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -18,11 +17,10 @@
   }
 }
 
-
 @media (max-width: 400px) {
   .header {
     margin: 0 0;
-    background-image: url('../../assets/cardapio/header.png');
+    background-image: url("../../assets/cardapio/header.png");
     background-size: auto;
     background-repeat: no-repeat;
     display: flex;
